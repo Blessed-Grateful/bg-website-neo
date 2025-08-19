@@ -25,7 +25,7 @@ function QuotesRotator({ items, interval = 5000, className = "", textClassName =
   return (
     <div className={`rotator ${className}`}>
       {items.map((q, i) => (
-        <p key={(typeof q === 'string' ? q : q.q)} className={`${textClassName} rotator-quote ${i === idx ? "active" : ""}`}>“{typeof q === 'string' ? q : q.q}”</p>
+        <p key={(typeof q === 'string' ? q : q.q)} className={`${textClassName} rotator-quote ${i === idx ? '' : 'hidden'}`}>“{typeof q === 'string' ? q : q.q}”</p>
       ))}
     </div>
   );
@@ -58,7 +58,7 @@ function Hero() {
         />
         <p className="mt-4 text-gray-300">A Neutral Philosophy anchored in unconditional love and unity.</p>
         <QuotesRotator items={captions} interval={6500} className="mt-3" textClassName="text-xl md:text-2xl font-medium" />
-        <QuotesRotator items={rotating} interval={6000} className="mt-8" />
+        <QuotesRotator items={rotating} interval={6000} className="mt-6" />
         <p className="mt-6 text-xs text-gray-400">Dr Sarah Chen sends You Her Full Ti Amo Energy Activation — “Listen for The Whispers of Her Name.”</p>
       </div>
     </section>

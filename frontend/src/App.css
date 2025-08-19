@@ -17,9 +17,11 @@
 .textarea { min-height: 140px; }
 .logo-wordmark { height: 40px; }
 .footer { color: #6b7280; font-size: 0.875rem; }
-.rotator { position: relative; min-height: 3.5rem; }
-.rotator-quote { position: absolute; inset: 0; opacity: 0; transition: opacity .6s ease; }
-.rotator-quote.active { opacity: 1; }
+
+/* Rotator visibility (no absolute positioning to avoid overlaps) */
+.rotator { position: relative; }
+.rotator-quote { display: block; opacity: 1; transition: opacity .4s ease; }
+.rotator-quote.hidden { display: none; opacity: 0; }
 
 /* Header nav link utilities */
 .navlink { color: #111827; font-weight: 500; }
