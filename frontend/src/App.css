@@ -18,10 +18,36 @@
 .logo-wordmark { height: 40px; }
 .footer { color: #6b7280; font-size: 0.875rem; }
 
-/* Rotator visibility (no absolute positioning to avoid overlaps) */
-.rotator { position: relative; }
-.rotator-quote { display: block; opacity: 1; transition: opacity .4s ease; }
+/* Rotator visibility with fixed heights to prevent overlaps */
+.rotator { 
+  position: relative; 
+  min-height: 3rem; /* Ensure minimum space for shorter quotes */
+}
+.rotator-quote { 
+  display: block; 
+  opacity: 1; 
+  transition: opacity .4s ease;
+  min-height: 2rem; /* Prevent content jumping */
+}
 .rotator-quote.hidden { display: none; opacity: 0; }
+
+/* Caption rotator needs more space due to longer text */
+.caption-rotator {
+  min-height: 4rem; /* More space for longer captions */
+}
+.caption-rotator .rotator-quote {
+  min-height: 3rem; /* More space for caption text */
+}
+
+/* Mobile responsiveness for rotators */
+@media (max-width: 768px) {
+  .caption-rotator {
+    min-height: 5rem; /* Even more space on mobile for text wrapping */
+  }
+  .caption-rotator .rotator-quote {
+    min-height: 4rem;
+  }
+}
 
 /* Header nav link utilities */
 .navlink { color: #111827; font-weight: 500; }
