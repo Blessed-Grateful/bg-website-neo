@@ -325,7 +325,8 @@ function BetweenPage() {
         {pauseActive && (
           <div className="space-y-8">
             <div className="text-6xl animate-pulse">◦</div>
-            <div className="text-lg text-gray-400">
+            <div className="text-lg text-gray-400" aria-live="polite">
+              <span className="sr-only">Timer: </span>
               {Math.ceil(pauseTimeLeft / 1000)} seconds of space
             </div>
             <button
@@ -334,6 +335,17 @@ function BetweenPage() {
             >
               Need more time? +30 seconds
             </button>
+            <div className="flex items-center justify-center gap-4 text-xs">
+              <label className="flex items-center gap-2 text-gray-500">
+                <input
+                  type="checkbox"
+                  checked={silentBell}
+                  onChange={(e) => setSilentBell(e.target.checked)}
+                  className="rounded"
+                />
+                Silent bell
+              </label>
+            </div>
           </div>
         )}
 
