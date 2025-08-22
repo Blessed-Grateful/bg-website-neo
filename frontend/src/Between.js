@@ -123,17 +123,20 @@ function BetweenPage() {
     setShowFollowUp(false);
     setSessionComplete(true);
     
-    // Store session data if consent given
-    if (continuityConsent) {
+    // Store session data only if explicit consent given
+    const memoryConsent = localStorage.getItem('between_memory_consent');
+    if (memoryConsent === 'true') {
+      const snippet = currentPrompt.question.substring(0, 60) + (currentPrompt.question.length > 60 ? '...' : '');
       localStorage.setItem('between_last_visit', JSON.stringify({
         date: new Date().toISOString(),
-        prompt: currentPrompt.question,
-        reflection: "A moment of presence was shared."
+        snippet: snippet,
+        source: "The Between",
+        nextStep: "Another turn when ready"
       }));
     }
     
-    // Play completion bell sound (if we had audio)
-    if (bellRef.current) {
+    // Play completion bell sound (unless silent)
+    if (bellRef.current && !silentBell) {
       // bellRef.current.play();
     }
   };
@@ -146,7 +149,6 @@ function BetweenPage() {
     setShowFollowUp(false);
     setSessionComplete(false);
     setShowBrakes(false);
-    setContinuityConsent(null);
     if (pauseIntervalRef.current) {
       clearInterval(pauseIntervalRef.current);
     }
