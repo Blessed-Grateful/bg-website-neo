@@ -7,23 +7,13 @@ const REFLECTIVE_PROMPTS = [
     followUp: "Notice what wants to be heard."
   },
   {
-    question: "What would it feel like to stop trying to figure this out for just this moment?",
-    pause: 45000,
-    followUp: "Let the not-knowing be enough."
-  },
-  {
-    question: "What is asking for your attention that you've been too busy to notice?",
-    pause: 40000,
-    followUp: "Sometimes the whisper knows what the voice forgot."
-  },
-  {
     question: "If this feeling could speak, what would it say?",
     pause: 35000,
     followUp: "Listen with your whole being."
   },
   {
-    question: "What would change if you trusted yourself completely right now?",
-    pause: 50000,
+    question: "What would change if you trusted yourself completely—just for this moment?",
+    pause: 45000,
     followUp: "The knowing is already here."
   }
 ];
