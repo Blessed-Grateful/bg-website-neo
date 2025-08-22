@@ -116,6 +116,17 @@ frontend:
       - working: true
         agent: "main"
         comment: "Fixed text overlap by adding caption-rotator class with min-height, increased margins (mt-4, mt-8, mt-8), reduced text size from text-xl md:text-2xl to text-lg md:text-xl, and added leading-relaxed for better spacing. Screenshots confirm no overlap occurs with both short and long rotating content."
+  - task: "The Between - Relational Intelligence Digital Sacred Space"
+    implemented: true
+    working: true
+    file: "Between.js, App.js, Header.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Created 'The Between' - a digital sacred space for contemplative reflection. Features: consent-based memory, timed pauses with reflective prompts, graceful completion with bell metaphor, 'return to people' brakes for crisis resources, local storage for continuity. Fully integrated into site navigation and homepage with gentle invitation. Embodies Relational Intelligence principles of presence over performance."
 
 backend:
   - task: "Ensure backend functionality not broken"
