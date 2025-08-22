@@ -368,10 +368,23 @@ function BetweenPage() {
           <button
             onClick={() => setShowBrakes(true)}
             className="text-gray-600 hover:text-gray-400 text-xs underline"
+            aria-label="Access crisis support resources"
           >
-            Need human support?
+            Return to people
           </button>
         </div>
+
+        {/* Memory controls - always visible when memory is enabled */}
+        {localStorage.getItem('between_memory_consent') === 'true' && (
+          <div className="fixed bottom-6 left-6 flex gap-2 text-xs">
+            <button onClick={forgetSession} className="text-red-400 hover:text-red-300 underline">
+              Forget session
+            </button>
+            <button onClick={forgetAll} className="text-red-400 hover:text-red-300 underline">
+              Forget all
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Hidden bell audio element for future enhancement */}
