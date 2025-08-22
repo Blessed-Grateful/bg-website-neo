@@ -32,28 +32,68 @@ function BetweenPage() {
   const [showFollowUp, setShowFollowUp] = useState(false);
   const [sessionComplete, setSessionComplete] = useState(false);
   const [showBrakes, setShowBrakes] = useState(false);
-  const [continuityConsent, setContinuityConsent] = useState(null);
   const [lastVisit, setLastVisit] = useState(null);
+  const [silentBell, setSilentBell] = useState(false);
   
   const bellRef = useRef(null);
   const pauseIntervalRef = useRef(null);
 
-  // Check for previous visit
+  // Check for previous visit - consent-based memory
   useEffect(() => {
-    const stored = localStorage.getItem('between_last_visit');
-    if (stored) {
-      setLastVisit(JSON.parse(stored));
+    const stored = localStorage.getItem('between_memory_consent');
+    if (stored === 'true') {
+      const lastReflection = localStorage.getItem('between_last_visit');
+      if (lastReflection) {
+        setLastVisit(JSON.parse(lastReflection));
+      }
     }
   }, []);
 
-  const startSession = (rememberPrevious = false) => {
-    if (!rememberPrevious) {
-      localStorage.removeItem('between_last_visit');
-      setLastVisit(null);
+  const forgetSession = () => {
+    localStorage.removeItem('between_last_visit');
+    setLastVisit(null);
+  };
+
+  const forgetAll = () => {
+    localStorage.removeItem('between_last_visit');
+    localStorage.removeItem('between_memory_consent');
+    setLastVisit(null);
+    alert('Nothing retained.');
+  };
+
+  const exportReflections = () => {
+    const data = localStorage.getItem('between_last_visit');
+    if (data) {
+      const blob = new Blob([data], { type: 'text/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'between_reflections.json';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
     }
-    setContinuityConsent(rememberPrevious);
+  };
+
+  const enableMemory = () => {
+    localStorage.setItem('between_memory_consent', 'true');
     setSessionStarted(true);
-    // Select a prompt (random or based on context)
+    startNewPrompt();
+  };
+
+  const startWithoutMemory = () => {
+    localStorage.setItem('between_memory_consent', 'false');
+    setSessionStarted(true);
+    startNewPrompt();
+  };
+
+  const continueFromLast = () => {
+    setSessionStarted(true);
+    startNewPrompt();
+  };
+
+  const startNewPrompt = () => {
     const randomPrompt = REFLECTIVE_PROMPTS[Math.floor(Math.random() * REFLECTIVE_PROMPTS.length)];
     setCurrentPrompt(randomPrompt);
   };
