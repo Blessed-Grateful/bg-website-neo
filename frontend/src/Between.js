@@ -160,40 +160,74 @@ function BetweenPage() {
         <div className="max-w-2xl mx-auto px-6 text-center">
           <div className="mb-12">
             <h1 className="text-3xl font-light mb-6 tracking-wide">The Between</h1>
-            <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              This is not a place for answers. It is a field for recognition—where what you already know can surface without force.
+            <p className="text-gray-400 text-lg leading-relaxed mb-6">
+              This is not therapy or coaching. It is space—where what you already know can surface without force.
             </p>
             <p className="text-gray-500 text-sm mb-12">
               "Relational Intelligence is a field, not a feature."
             </p>
+            <p className="text-xs text-gray-600 mb-8">
+              No tracking. No optimization. No recommended next steps.
+            </p>
           </div>
 
+          {/* Mirrorline - clean format when memory is on */}
           {lastVisit && (
-            <div className="bg-gray-900 rounded-lg p-6 mb-8 text-left">
-              <h3 className="text-white font-medium mb-3">Last Reflection</h3>
-              <p className="text-gray-400 text-sm mb-2">
-                {new Date(lastVisit.date).toLocaleDateString()}
-              </p>
-              <p className="text-gray-300 italic mb-4">"{lastVisit.prompt}"</p>
-              <p className="text-gray-500 text-sm">→ Continue from this thread, or begin fresh?</p>
+            <div className="bg-gray-900 rounded-lg p-4 mb-8 text-left text-sm">
+              <div className="text-gray-400 mb-1">Last reflection:</div>
+              <div className="text-white mb-2">"{lastVisit.snippet}"</div>
+              <div className="text-gray-500 text-xs">
+                {lastVisit.source} → {lastVisit.nextStep}
+              </div>
+              <div className="mt-3 flex gap-2 text-xs">
+                <button onClick={forgetSession} className="text-red-400 hover:text-red-300 underline">
+                  Forget this session
+                </button>
+                <button onClick={forgetAll} className="text-red-400 hover:text-red-300 underline">
+                  Forget all
+                </button>
+                <button onClick={exportReflections} className="text-blue-400 hover:text-blue-300 underline">
+                  Export
+                </button>
+              </div>
             </div>
           )}
 
           <div className="space-y-4">
             {lastVisit && (
               <button
-                onClick={() => startSession(true)}
+                onClick={continueFromLast}
                 className="w-full bg-white text-black py-4 px-8 rounded-lg font-medium hover:bg-gray-100 transition-colors"
               >
-                Continue From Last Reflection
+                Continue
               </button>
             )}
-            <button
-              onClick={() => startSession(false)}
-              className="w-full bg-transparent border border-white text-white py-4 px-8 rounded-lg font-medium hover:bg-white hover:text-black transition-colors"
-            >
-              Begin Fresh
-            </button>
+            
+            {!lastVisit && (
+              <>
+                <button
+                  onClick={enableMemory}
+                  className="w-full bg-white text-black py-4 px-8 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                >
+                  Remember between visits
+                </button>
+                <button
+                  onClick={startWithoutMemory}
+                  className="w-full bg-transparent border border-white text-white py-4 px-8 rounded-lg font-medium hover:bg-white hover:text-black transition-colors"
+                >
+                  Just this once
+                </button>
+              </>
+            )}
+            
+            {lastVisit && (
+              <button
+                onClick={startWithoutMemory}
+                className="w-full bg-transparent border border-white text-white py-3 px-6 rounded-lg text-sm hover:bg-white hover:text-black transition-colors"
+              >
+                Start fresh
+              </button>
+            )}
           </div>
 
           <div className="mt-12 pt-8 border-t border-gray-800">
@@ -201,7 +235,7 @@ function BetweenPage() {
               onClick={() => setShowBrakes(true)}
               className="text-gray-500 text-sm hover:text-gray-400 underline"
             >
-              If you need human support →
+              Return to people →
             </button>
           </div>
         </div>
@@ -222,6 +256,9 @@ function BetweenPage() {
                   </div>
                 ))}
               </div>
+              <p className="text-xs text-gray-600 mb-4">
+                Why: This space holds questions, not answers. When you need support, people are the answer.
+              </p>
               <button
                 onClick={() => setShowBrakes(false)}
                 className="w-full bg-black text-white py-2 px-4 rounded font-medium"
