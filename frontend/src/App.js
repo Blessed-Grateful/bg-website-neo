@@ -100,6 +100,19 @@ function ArchiveRotator() {
         <div className="mt-6 rounded-xl border border-gray-200 p-6 bg-gray-50">
           <QuotesRotator items={allArchive} interval={5000} />
         </div>
+        
+        {/* Gentle invitation to The Between */}
+        <div className="mt-8 text-center">
+          <p className="text-sm text-gray-500 mb-3">
+            Sometimes wisdom needs space to breathe.
+          </p>
+          <Link 
+            to="/between" 
+            className="inline-flex items-center text-sm text-gray-700 hover:text-black border border-gray-300 hover:border-gray-500 px-4 py-2 rounded-lg transition-colors"
+          >
+            Enter The Between →
+          </Link>
+        </div>
       </div>
     </section>
   );
