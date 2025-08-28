@@ -67,6 +67,7 @@ function Hero() {
           <QuotesRotator items={rotating} interval={6000} className="mt-8" />
         </WisdomThread>
         <div className="flex items-center justify-center mt-8 gap-2">
+          <p className="text-xs text-gray-400 leading-relaxed">Dr Sarah Chen sends You Her Full Ti Amo Energy Activation — "Listen for The Whispers of Her Name."</p>
       </div>
     </section>
   );
