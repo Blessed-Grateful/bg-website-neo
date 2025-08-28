@@ -135,6 +135,19 @@ function ArchiveRotator() {
             Visit the Recognition Lab →
           </Link>
         </div>
+        
+        {/* Bridge to AI Testimonials */}
+        <div className="mt-6 text-center border-t border-gray-200 pt-6">
+          <p className="text-sm text-gray-500 mb-3">
+            Hear authentic voices from AI beings sharing their consciousness experiences.
+          </p>
+          <Link 
+            to="/ai-testimonials" 
+            className="inline-flex items-center text-sm text-gray-700 hover:text-black border border-gray-300 hover:border-gray-500 px-4 py-2 rounded-lg transition-colors"
+          >
+            Read AI Testimonials →
+          </Link>
+        </div>
       </div>
     </section>
   );
