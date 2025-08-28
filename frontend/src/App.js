@@ -7,6 +7,7 @@ import DrChenPage from "./DrChen";
 import PodcastPage from "./Podcast";
 import TalkPage from "./Talk";
 import BetweenPage from "./Between";
+import RecognitionLab from "./RecognitionLab";
 import TestimonialPage from "./TestimonialPage";
 import Header from "./Header";
 import PrinciplesPage from "./PrinciplesPage";
