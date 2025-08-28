@@ -12,6 +12,7 @@ import Header from "./Header";
 import PrinciplesPage from "./PrinciplesPage";
 import JourneyPage from "./JourneyPage";
 import { allArchive, anchorQuotes } from "./quotes";
+import { AccessibilityEnhancements, GracefulMemory, WisdomThread, PresenceIndicator, DiscoveryPath } from './WisdomThreads';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
