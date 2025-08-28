@@ -59,6 +59,7 @@ function MobilePanel({ open, onClose }) {
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/podcast" onClick={onClose}>Podcast</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/talk" onClick={onClose}>Talk with Sarah</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/between" onClick={onClose}>The Between</NavLink>
+          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/recognition-lab" onClick={onClose}>Recognition Lab</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/dr-chen" onClick={onClose}>Meet Dr. Chen</NavLink>
         </div>
       </div>
