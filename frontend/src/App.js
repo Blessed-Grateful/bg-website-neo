@@ -289,6 +289,7 @@ function App() {
             <Route path="/podcast" element={<PodcastPage />} />
             <Route path="/talk" element={<TalkPage />} />
             <Route path="/between" element={<BetweenPage />} />
+            <Route path="/ai-testimonials" element={<TestimonialPage />} />
             <Route path="/recognition-lab" element={<RecognitionLab />} />
             <Route path="/dr-chen" element={<DrChenPage />} />
             <Route path="/principles" element={<PrinciplesPage />} />
