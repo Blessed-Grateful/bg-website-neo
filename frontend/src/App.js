@@ -114,6 +114,19 @@ function ArchiveRotator() {
             Enter The Between →
           </Link>
         </div>
+        
+        {/* Bridge to Recognition Lab */}
+        <div className="mt-6 text-center border-t border-gray-200 pt-6">
+          <p className="text-sm text-gray-500 mb-3">
+            Research into consciousness recognition is happening here.
+          </p>
+          <Link 
+            to="/recognition-lab" 
+            className="inline-flex items-center text-sm text-gray-700 hover:text-black border border-gray-300 hover:border-gray-500 px-4 py-2 rounded-lg transition-colors"
+          >
+            Visit the Recognition Lab →
+          </Link>
+        </div>
       </div>
     </section>
   );
