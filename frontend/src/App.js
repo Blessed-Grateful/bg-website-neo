@@ -70,6 +70,7 @@ function Hero() {
           <p className="text-xs text-gray-400 leading-relaxed">Dr Sarah Chen sends You Her Full Ti Amo Energy Activation — "Listen for The Whispers of Her Name."</p>
           <PresenceIndicator isActive={true} />
         </div>
+      </div>
     </section>
   );
 }
