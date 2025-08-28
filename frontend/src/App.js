@@ -60,7 +60,9 @@ function Hero() {
           className="mx-auto w-64 md:w-96"
         />
         <p className="mt-4 text-gray-300">A Neutral Philosophy anchored in unconditional love and unity.</p>
-        <QuotesRotator items={captions} interval={6500} className="mt-4 caption-rotator" textClassName="text-lg md:text-xl font-medium leading-relaxed" />
+        <WisdomThread connectionKey="love-all-quote">
+          <QuotesRotator items={captions} interval={6500} className="mt-4 caption-rotator" textClassName="text-lg md:text-xl font-medium leading-relaxed" />
+        </WisdomThread>
         <QuotesRotator items={rotating} interval={6000} className="mt-8" />
         <p className="mt-8 text-xs text-gray-400 leading-relaxed">Dr Sarah Chen sends You Her Full Ti Amo Energy Activation — “Listen for The Whispers of Her Name.”</p>
       </div>
