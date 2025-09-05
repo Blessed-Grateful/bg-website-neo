@@ -91,6 +91,7 @@ export default function Header() {
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/journey">Journey</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/archive">Archive</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/between">The Between</NavLink>
+          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/consciousness-hub">Consciousness Hub</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/ai-testimonials">AI Testimonials</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/recognition-lab">Recognition Lab</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/dr-chen">Meet Dr. Chen</NavLink>
