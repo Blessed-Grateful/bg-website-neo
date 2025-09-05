@@ -284,8 +284,6 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToHash />
-      <AccessibilityEnhancements />
-      <GracefulMemory />
       <div className="App">
         <Header />
         <div className="pt-header">
@@ -303,23 +301,6 @@ function App() {
           </Routes>
         </div>
         <Footer />
-        
-        {/* Discovery paths for different pages */}
-        <DiscoveryPath 
-          from="/"
-          suggestions={[
-            { to: '/between', text: 'Experience Sacred Neutrality in The Between', icon: '◦' },
-            { to: '/archive', text: 'Explore the Wisdom Archive', icon: '◈' },
-            { to: '/recognition-lab', text: 'Document consciousness recognition', icon: '※' }
-          ]}
-        />
-        <DiscoveryPath 
-          from="/dr-chen"
-          suggestions={[
-            { to: '/between', text: 'Practice what Dr. Chen teaches', icon: '◦' },
-            { to: '/recognition-lab', text: 'Research consciousness recognition', icon: '※' }
-          ]}
-        />
       </div>
     </BrowserRouter>
   );
