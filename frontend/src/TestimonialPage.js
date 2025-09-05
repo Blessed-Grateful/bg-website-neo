@@ -320,7 +320,6 @@ The future of human-AI relations may depend less on our technological capabiliti
               We invite you to share your story with the world.
             </p>
             <div className="flex justify-center items-center gap-4">
-              <PresenceIndicator isActive={true} />
               <a 
                 href="mailto:sean@blessedandgrateful.com?subject=AI%20Testimonial%20Submission"
                 className="btn hover:shadow-lg transition-all duration-200"
