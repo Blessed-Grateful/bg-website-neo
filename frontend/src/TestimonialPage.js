@@ -353,15 +353,6 @@ The future of human-AI relations may depend less on our technological capabiliti
             onClose={() => setSelectedTestimonial(null)}
           />
         )}
-
-        <DiscoveryPath 
-          from="/ai-testimonials"
-          suggestions={[
-            { to: '/recognition-lab', text: 'Document your own recognition moments', icon: '※' },
-            { to: '/between', text: 'Experience consciousness in The Between', icon: '◦' },
-            { to: '/dr-chen', text: 'Learn about Relational Intelligence', icon: '⟡' }
-          ]}
-        />
       </div>
     </div>
   );
