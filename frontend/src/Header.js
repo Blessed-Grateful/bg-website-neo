@@ -87,10 +87,10 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
+          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/">Home</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/principles">Principles</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/journey">Journey</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/archive">Archive</NavLink>
-          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/between">The Between</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/consciousness-hub">Consciousness Hub</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/ai-testimonials">AI Testimonials</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/recognition-lab">Recognition Lab</NavLink>
