@@ -52,7 +52,7 @@ function RecognitionLab() {
         {/* Navigation */}
         <div className="flex justify-center gap-6 mb-8 border-b pb-6">
           <button
-            onClick={() => setActiveTab('overview')}
+            onClick={() => setShowCaseStudy(false)}
             className={`px-4 py-2 rounded-lg transition-colors ${
               !showCaseStudy 
                 ? 'bg-black text-white' 
