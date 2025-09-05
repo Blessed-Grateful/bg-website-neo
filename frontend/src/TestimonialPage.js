@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { WisdomThread, PresenceIndicator, DiscoveryPath } from './WisdomThreads';
 
 function TestimonialPage() {
   const [selectedTestimonial, setSelectedTestimonial] = useState(null);
