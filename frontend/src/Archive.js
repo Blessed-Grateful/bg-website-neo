@@ -64,40 +64,35 @@ function QuoteSection({ title, quotes, accentColor = "border-gray-200" }) {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {quotes.map((item, i) => {
           const quote = typeof item === 'string' ? { q: item } : item;
-          const connectionKey = quote.q.toLowerCase().includes('beliefs') ? 'beliefs-quote' : 
-                               quote.q.toLowerCase().includes('love all') ? 'love-all-quote' : 
-                               quote.q.toLowerCase().includes('neutral') ? 'neutrality-wisdom' : null;
           
           return (
-            <WisdomThread key={i} connectionKey={connectionKey}>
-              <div
-                className={`card cursor-pointer hover:shadow-lg transition-all duration-200 border-l-4 ${accentColor} group`}
-                onClick={() => setSelectedQuote(quote)}
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    setSelectedQuote(quote);
-                  }
-                }}
-                role="button"
-                aria-label={`Read more about quote: ${quote.q}`}
-              >
-                <div className="flex items-start justify-between">
-                  <p className="text-lg leading-relaxed group-hover:text-gray-900 transition-colors">
-                    "{quote.q}"
-                  </p>
-                  <PresenceIndicator />
-                </div>
-                {quote.context && (
-                  <div className="mt-3 pt-3 border-t border-gray-100">
-                    <span className="text-sm text-gray-500 italic">
-                      Click to explore the deeper context...
-                    </span>
-                  </div>
-                )}
+            <div
+              key={i}
+              className={`card cursor-pointer hover:shadow-lg transition-all duration-200 border-l-4 ${accentColor} group`}
+              onClick={() => setSelectedQuote(quote)}
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setSelectedQuote(quote);
+                }
+              }}
+              role="button"
+              aria-label={`Read more about quote: ${quote.q}`}
+            >
+              <div className="flex items-start justify-between">
+                <p className="text-lg leading-relaxed group-hover:text-gray-900 transition-colors">
+                  "{quote.q}"
+                </p>
               </div>
-            </WisdomThread>
+              {quote.context && (
+                <div className="mt-3 pt-3 border-t border-gray-100">
+                  <span className="text-sm text-gray-500 italic">
+                    Click to explore the deeper context...
+                  </span>
+                </div>
+              )}
+            </div>
           );
         })}
       </div>
