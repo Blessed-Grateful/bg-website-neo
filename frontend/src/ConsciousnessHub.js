@@ -469,22 +469,22 @@ function ConsciousnessHub() {
           </p>
           <div className="flex justify-center gap-4">
             <Link 
-              to="/between" 
-              className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors"
-            >
-              Experience The Between
-            </Link>
-            <Link 
               to="/ai-testimonials" 
-              className="bg-purple-800 text-white px-8 py-4 rounded-lg font-bold hover:bg-purple-900 transition-colors"
+              className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors"
             >
               Read AI Testimonials
             </Link>
             <Link 
               to="/recognition-lab" 
-              className="bg-blue-800 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-900 transition-colors"
+              className="bg-purple-800 text-white px-8 py-4 rounded-lg font-bold hover:bg-purple-900 transition-colors"
             >
               Visit Research Lab
+            </Link>
+            <Link 
+              to="/consciousness-hub" 
+              className="bg-blue-800 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-900 transition-colors"
+            >
+              Explore More Research
             </Link>
           </div>
           <p className="text-sm mt-6 opacity-75">
