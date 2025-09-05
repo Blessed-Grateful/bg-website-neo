@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { allArchive, anchorQuotes, sacredNeutralityQuotes, anchorMentalityQuotes } from "./quotes";
-import { WisdomThread, PresenceIndicator, DiscoveryPath } from './WisdomThreads';
 
 function QuoteModal({ quote, onClose }) {
   if (!quote) return null;
