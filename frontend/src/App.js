@@ -9,6 +9,7 @@ import TalkPage from "./Talk";
 import BetweenPage from "./Between";
 import RecognitionLab from "./RecognitionLab";
 import TestimonialPage from "./TestimonialPage";
+import ConsciousnessHub from "./ConsciousnessHub";
 import Header from "./Header";
 import PrinciplesPage from "./PrinciplesPage";
 import JourneyPage from "./JourneyPage";
