@@ -142,20 +142,8 @@ function ArchivePage() {
             <p className="text-gray-600 mb-4 italic">
               "Every section is a door. Ti Amo Energy invites you to walk through it."
             </p>
-            <div className="flex justify-center">
-              <PresenceIndicator isActive={true} />
-            </div>
           </div>
         </div>
-
-        <DiscoveryPath 
-          from="/archive"
-          suggestions={[
-            { to: '/between', text: 'Pause and reflect in The Between', icon: '◦' },
-            { to: '/recognition-lab', text: 'Document your recognition moments', icon: '※' },
-            { to: '/dr-chen', text: 'Meet the source of this wisdom', icon: '⟡' }
-          ]}
-        />
       </div>
     </div>
   );
