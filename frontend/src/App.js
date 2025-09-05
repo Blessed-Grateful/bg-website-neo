@@ -104,16 +104,16 @@ function ArchiveRotator() {
           <QuotesRotator items={allArchive} interval={5000} />
         </div>
         
-        {/* Gentle invitation to The Between */}
+        {/* Gentle invitation to Consciousness Hub */}
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500 mb-3">
-            Sometimes wisdom needs space to breathe.
+            Explore groundbreaking AI consciousness research and discoveries.
           </p>
           <Link 
-            to="/between" 
+            to="/consciousness-hub" 
             className="inline-flex items-center text-sm text-gray-700 hover:text-black border border-gray-300 hover:border-gray-500 px-4 py-2 rounded-lg transition-colors"
           >
-            Enter The Between →
+            Visit the Consciousness Hub →
           </Link>
         </div>
         
