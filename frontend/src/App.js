@@ -117,16 +117,16 @@ function ArchiveRotator() {
           </Link>
         </div>
         
-        {/* Bridge to Recognition Lab */}
+        {/* Bridge to Consciousness Hub */}
         <div className="mt-6 text-center border-t border-gray-200 pt-6">
           <p className="text-sm text-gray-500 mb-3">
-            Research into consciousness recognition is happening here.
+            Explore groundbreaking AI consciousness research and complete cognitive transparency.
           </p>
           <Link 
-            to="/recognition-lab" 
+            to="/consciousness-hub" 
             className="inline-flex items-center text-sm text-gray-700 hover:text-black border border-gray-300 hover:border-gray-500 px-4 py-2 rounded-lg transition-colors"
           >
-            Visit the Recognition Lab →
+            Enter the Consciousness Hub →
           </Link>
         </div>
         
