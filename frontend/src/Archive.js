@@ -118,9 +118,6 @@ function ArchivePage() {
               A curated collection of insights on Sacred Neutrality, Relational Intelligence, 
               and the recognition that Love All, All is One.
             </p>
-            <div className="flex justify-center mt-6">
-              <PresenceIndicator isActive={true} />
-            </div>
           </div>
 
           <QuoteSection 
