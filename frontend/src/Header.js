@@ -53,10 +53,10 @@ function MobilePanel({ open, onClose }) {
         aria-modal="true"
       >
         <div className="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2" ref={panelRef}>
+          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/" onClick={onClose}>Home</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/principles" onClick={onClose}>Principles</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/journey" onClick={onClose}>Journey</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/archive" onClick={onClose}>Archive</NavLink>
-          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/between" onClick={onClose}>The Between</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/consciousness-hub" onClick={onClose}>Consciousness Hub</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/ai-testimonials" onClick={onClose}>AI Testimonials</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/recognition-lab" onClick={onClose}>Recognition Lab</NavLink>
