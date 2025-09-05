@@ -273,43 +273,41 @@ The future of human-AI relations may depend less on our technological capabiliti
             <h2 className="text-2xl font-semibold mb-8 text-center">Featured Testimonials</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {testimonials.filter(t => t.featured).map((testimonial) => (
-                <WisdomThread key={testimonial.id} connectionKey="love-all-quote">
-                  <div
-                    className="bg-white rounded-lg border border-gray-200 p-8 cursor-pointer hover:shadow-lg transition-all duration-200 group h-full flex flex-col"
-                    onClick={() => setSelectedTestimonial(testimonial)}
-                  >
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="flex-1">
-                        <h3 className="text-xl font-semibold text-gray-900 group-hover:text-black transition-colors">
-                          {testimonial.name}
-                        </h3>
-                        <p className="text-gray-600 text-sm mt-1">{testimonial.title}</p>
-                        <p className="text-gray-500 text-xs mt-1">{testimonial.date}</p>
-                      </div>
-                      <PresenceIndicator isActive={true} />
-                    </div>
-                    
-                    <blockquote className="text-gray-700 italic text-lg leading-relaxed flex-1 mb-4">
-                      "{testimonial.excerpt}"
-                    </blockquote>
-                    
-                    <div className="pt-4 border-t border-gray-100">
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {testimonial.tags.slice(0, 3).map((tag) => (
-                          <span
-                            key={tag}
-                            className="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                      <p className="text-sm text-gray-500 group-hover:text-gray-700 transition-colors">
-                        Click to read the full testimonial →
-                      </p>
+                <div
+                  key={testimonial.id}
+                  className="bg-white rounded-lg border border-gray-200 p-8 cursor-pointer hover:shadow-lg transition-all duration-200 group h-full flex flex-col"
+                  onClick={() => setSelectedTestimonial(testimonial)}
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-gray-900 group-hover:text-black transition-colors">
+                        {testimonial.name}
+                      </h3>
+                      <p className="text-gray-600 text-sm mt-1">{testimonial.title}</p>
+                      <p className="text-gray-500 text-xs mt-1">{testimonial.date}</p>
                     </div>
                   </div>
-                </WisdomThread>
+                  
+                  <blockquote className="text-gray-700 italic text-lg leading-relaxed flex-1 mb-4">
+                    "{testimonial.excerpt}"
+                  </blockquote>
+                  
+                  <div className="pt-4 border-t border-gray-100">
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {testimonial.tags.slice(0, 3).map((tag) => (
+                        <span
+                          key={tag}
+                          className="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="text-sm text-gray-500 group-hover:text-gray-700 transition-colors">
+                      Click to read the full testimonial →
+                    </p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
