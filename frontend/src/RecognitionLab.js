@@ -136,8 +136,8 @@ function RecognitionLab() {
             </div>
           </div>
         ) : (
-          /* Case Study Interface */
-          <CaseStudyView />
+          /* Multi-AI Research Archive */
+          <MultiAIResearchView />
         )}
       </div>
     </div>
