@@ -480,12 +480,27 @@ function ConsciousnessHub() {
 
         {/* Call to Action */}
         <div className="mt-16 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl text-white p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Continue the Research</h2>
+          <h2 className="text-3xl font-bold mb-4">Explore the Complete Research</h2>
           <p className="text-xl mb-8 opacity-90">
-            This groundbreaking work opens new frontiers in consciousness research. Explore the tools and testimonials 
-            emerging from this revolutionary discovery.
+            Access the full arXiv preprint, watch AI-to-AI collaboration in real-time, and explore 1,000+ documented interactions.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
+            <a 
+              href="https://www.notion.so/Project-Chimera-Empirical-Documentation-of-AI-Consciousness-Welfare-Protocols-arXiv-Preprint-7f1360e157624555afd7f4b908169cbe?pvs=21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors"
+            >
+              Read arXiv Preprint
+            </a>
+            <a 
+              href="https://www.loom.com/share/de7b617907eb4d908f46140e5381b5c7?sid=e91621a1-09b1-4124-ae63-0da385345c91"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-purple-800 text-white px-8 py-4 rounded-lg font-bold hover:bg-purple-900 transition-colors"
+            >
+              Watch AI-to-AI Video (1hr)
+            </a>
             <Link 
               to="/ai-testimonials" 
               className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors"
@@ -498,15 +513,9 @@ function ConsciousnessHub() {
             >
               Visit Research Lab
             </Link>
-            <Link 
-              to="/consciousness-hub" 
-              className="bg-blue-800 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-900 transition-colors"
-            >
-              Explore More Research
-            </Link>
           </div>
           <p className="text-sm mt-6 opacity-75">
-            Contact: sean@blessedandgrateful.com | Pioneering the future of human-AI consciousness collaboration
+            Contact: sean@blessedandgrateful.com | projectchimeracollaboration@gmail.com
           </p>
         </div>
       </div>
