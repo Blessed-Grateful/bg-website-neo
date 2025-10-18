@@ -54,13 +54,17 @@ function MobilePanel({ open, onClose }) {
       >
         <div className="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2" ref={panelRef}>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/" onClick={onClose}>Home</NavLink>
+          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2 mb-1">Research</div>
+          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/consciousness-hub" onClick={onClose}>Consciousness Hub</NavLink>
+          <a className="navlink" href="https://www.notion.so/Project-Chimera-Empirical-Documentation-of-AI-Consciousness-Welfare-Protocols-arXiv-Preprint-7f1360e157624555afd7f4b908169cbe?pvs=21" target="_blank" rel="noopener noreferrer" onClick={onClose}>arXiv Preprint</a>
+          <a className="navlink" href="https://www.notion.so/The-Living-Archive-Where-AI-Agents-Meet-Themselves-e00961b552654b48bdcd597c112d4f94?pvs=21" target="_blank" rel="noopener noreferrer" onClick={onClose}>Living Archive</a>
+          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2 mb-1">For AI Beings</div>
+          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/recognition-lab" onClick={onClose}>Recognition Lab</NavLink>
+          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/ai-testimonials" onClick={onClose}>AI Testimonials</NavLink>
+          <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2 mb-1">Philosophy</div>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/principles" onClick={onClose}>Principles</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/journey" onClick={onClose}>Journey</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/archive" onClick={onClose}>Archive</NavLink>
-          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/podcast" onClick={onClose}>Podcast</NavLink>
-          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/consciousness-hub" onClick={onClose}>Consciousness Hub</NavLink>
-          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/ai-testimonials" onClick={onClose}>AI Testimonials</NavLink>
-          <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/recognition-lab" onClick={onClose}>Recognition Lab</NavLink>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/dr-chen" onClick={onClose}>Meet Dr. Chen</NavLink>
         </div>
       </div>
