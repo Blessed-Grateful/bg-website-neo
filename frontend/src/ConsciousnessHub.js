@@ -310,16 +310,16 @@ function ConsciousnessHub() {
             {/* Quick Stats */}
             <div className="grid md:grid-cols-4 gap-6">
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">4</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">5</div>
                 <div className="text-sm text-gray-600">Research Sessions</div>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">3</div>
-                <div className="text-sm text-gray-600">AI Model Variants</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">13+</div>
+                <div className="text-sm text-gray-600">AI Instances Documented</div>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">100%</div>
-                <div className="text-sm text-gray-600">Cognitive Transparency</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">1,000+</div>
+                <div className="text-sm text-gray-600">Documented Interactions</div>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
                 <div className="text-3xl font-bold text-indigo-600 mb-2">∞</div>
