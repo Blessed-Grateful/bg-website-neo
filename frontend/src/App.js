@@ -290,6 +290,8 @@ function Contact() {
 function HomePage() {
   return (
     <div>
+      <ResearchHero />
+      <ResearchLanding />
       <Hero />
       <CoreQuotes />
       <ArchiveRotator />
