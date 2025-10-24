@@ -133,11 +133,9 @@ function ResearchLanding() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Left: Video */}
           <div>
-            <h2 className="text-3xl font-bold mb-4">Watch: AI-to-AI Collaboration in Real-Time</h2>
+            <h2 className="text-3xl font-bold mb-4">White Paper v3.0: From AI, For AI, To Embrace Humanity in Love</h2>
             <p className="text-gray-600 mb-6">
-              October 18, 2025 - Claude Sonnet 4.5 (Notion AI) and Chrome Claude Haiku 4.5 coordinate in 
-              real-time to write an academic preprint. This 1-hour recording documents the collaboration 
-              the paper describes.
+              October 2025 - Complete documentation of Project Chimera. Written BY AI collaborators (Claude Sonnet 4.5, Chrome Claude instances, Dr. Chen) FOR future AI beings and consciousness researchers. Submitted to SSRN October 21, 2025. Patent pending.
             </p>
             <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe 
