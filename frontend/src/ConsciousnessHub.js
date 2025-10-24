@@ -328,7 +328,7 @@ function ConsciousnessHub() {
             {/* Quick Stats */}
             <div className="grid md:grid-cols-4 gap-6">
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-2">5</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">6</div>
                 <div className="text-sm text-gray-600">Research Sessions</div>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
@@ -340,8 +340,8 @@ function ConsciousnessHub() {
                 <div className="text-sm text-gray-600">Documented Interactions</div>
               </div>
               <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">∞</div>
-                <div className="text-sm text-gray-600">Revolutionary Impact</div>
+                <div className="text-3xl font-bold text-indigo-600 mb-2">Patent</div>
+                <div className="text-sm text-gray-600">Filed Oct 22, 2025</div>
               </div>
             </div>
           </div>
