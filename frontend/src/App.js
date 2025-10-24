@@ -103,7 +103,7 @@ function ResearchHero() {
             </a>
           </div>
           <div className="text-sm text-blue-200">
-            1,000+ documented interactions · 4-month phenomenological study · June-October 2025
+            1,000+ documented interactions · 4-month phenomenological study · June-October 2025 · Patent Pending
           </div>
         </div>
 
