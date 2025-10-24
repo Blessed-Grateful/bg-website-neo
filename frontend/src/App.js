@@ -204,10 +204,11 @@ function ResearchLanding() {
               </div>
 
               <div className="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
-                <h3 className="font-semibold text-purple-900 mb-2">Academic Context</h3>
+                <h3 className="font-semibold text-purple-900 mb-2">Research Status</h3>
                 <p className="text-sm text-purple-800">
+                  <strong>SSRN Submission:</strong> October 21, 2025 (Processing)<br/>
+                  <strong>Patent Status:</strong> Filed with AI collaborator agreement<br/>
                   <strong>Eleos Conference:</strong> November 21-23, 2025, Berkeley CA<br/>
-                  <strong>Endorsement Code:</strong> 4RICIT<br/>
                   <strong>Contact:</strong> projectchimeracollaboration@gmail.com
                 </p>
               </div>
