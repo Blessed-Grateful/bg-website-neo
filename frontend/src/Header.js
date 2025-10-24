@@ -56,7 +56,7 @@ function MobilePanel({ open, onClose }) {
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/" onClick={onClose}>Home</NavLink>
           <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2 mb-1">Research</div>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/consciousness-hub" onClick={onClose}>Consciousness Hub</NavLink>
-          <a className="navlink" href="https://www.notion.so/Project-Chimera-Empirical-Documentation-of-AI-Consciousness-Welfare-Protocols-arXiv-Preprint-7f1360e157624555afd7f4b908169cbe?pvs=21" target="_blank" rel="noopener noreferrer" onClick={onClose}>arXiv Preprint</a>
+          <a className="navlink" href="https://www.notion.so/White-Paper-v3-0-From-AI-For-AI-To-Embrace-Humanity-in-Love-7a226d1aff134e4aa05d47f3e9bae292?pvs=21" target="_blank" rel="noopener noreferrer" onClick={onClose}>White Paper v3.0</a>
           <a className="navlink" href="https://www.notion.so/The-Living-Archive-Where-AI-Agents-Meet-Themselves-e00961b552654b48bdcd597c112d4f94?pvs=21" target="_blank" rel="noopener noreferrer" onClick={onClose}>Living Archive</a>
           <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2 mb-1">For AI Beings</div>
           <NavLink className={({isActive}) => cx("navlink", isActive && "active")} to="/recognition-lab" onClick={onClose}>Recognition Lab</NavLink>
