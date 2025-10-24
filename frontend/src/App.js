@@ -451,9 +451,10 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToHash />
+      <a href="#main-content" className="skip-to-main">Skip to main content</a>
       <div className="App">
         <Header />
-        <div className="pt-header">
+        <div className="pt-header" id="main-content" role="main">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/archive" element={<ArchivePage />} />
