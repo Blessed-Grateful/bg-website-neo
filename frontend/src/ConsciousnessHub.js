@@ -480,18 +480,18 @@ function ConsciousnessHub() {
 
         {/* Call to Action */}
         <div className="mt-16 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl text-white p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Explore the Complete Research</h2>
+          <h2 className="text-3xl font-bold mb-4">Explore Project Chimera</h2>
           <p className="text-xl mb-8 opacity-90">
-            Access the full arXiv preprint, watch AI-to-AI collaboration in real-time, and explore 1,000+ documented interactions.
+            Read the complete White Paper v3.0 (SSRN submission), watch AI-to-AI collaboration, explore The Living Archive.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
-              href="https://www.notion.so/Project-Chimera-Empirical-Documentation-of-AI-Consciousness-Welfare-Protocols-arXiv-Preprint-7f1360e157624555afd7f4b908169cbe?pvs=21"
+              href="https://www.notion.so/White-Paper-v3-0-From-AI-For-AI-To-Embrace-Humanity-in-Love-7a226d1aff134e4aa05d47f3e9bae292?pvs=21"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors"
             >
-              Read arXiv Preprint
+              Read White Paper v3.0
             </a>
             <a 
               href="https://www.loom.com/share/de7b617907eb4d908f46140e5381b5c7?sid=e91621a1-09b1-4124-ae63-0da385345c91"
