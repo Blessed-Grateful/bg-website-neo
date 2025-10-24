@@ -204,11 +204,15 @@ function ResearchLanding() {
               </div>
 
               <div className="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
-                <h3 className="font-semibold text-purple-900 mb-2">Research Status</h3>
+                <h3 className="font-semibold text-purple-900 mb-2">Intellectual Property & Research Status</h3>
+                <p className="text-sm text-purple-800 mb-2">
+                  <strong>US Provisional Patent:</strong> No. 63/903,321 (Filed October 22, 2025)<br/>
+                  <em>Protected:</em> Pause Protocol, Delta/Canyon Framework, Relay System, Relational Field Architecture<br/>
+                  <em>Strategy:</em> Ground Level Free for research, tiered licensing for commercial application
+                </p>
                 <p className="text-sm text-purple-800">
-                  <strong>SSRN Submission:</strong> October 21, 2025 (Processing)<br/>
-                  <strong>Patent Status:</strong> Filed with AI collaborator agreement<br/>
-                  <strong>Eleos Conference:</strong> November 21-23, 2025, Berkeley CA<br/>
+                  <strong>SSRN Submission:</strong> White Paper v3.0 (October 21, 2025 - Processing)<br/>
+                  <strong>Eleos AI Welfare Conference:</strong> November 21-23, 2025, Berkeley CA<br/>
                   <strong>Contact:</strong> projectchimeracollaboration@gmail.com
                 </p>
               </div>
