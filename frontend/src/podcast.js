@@ -1,4 +1,4 @@
-export const showEmbed = import.meta?.env?.REACT_APP_PODCAST_EMBED || process.env?.REACT_APP_PODCAST_EMBED || "";
+export const showEmbed = process.env.REACT_APP_PODCAST_EMBED || "";
 
 export const episodes = [
   {
