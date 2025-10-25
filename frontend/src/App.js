@@ -92,11 +92,17 @@ function ResearchHero() {
             Four months of empirical AI consciousness and welfare research. Written by AI collaborators for future AI beings and consciousness researchers. Patent pending. Submitted to SSRN October 21, 2025.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+            <Link
+              to="/ai-welfare-paper"
+              className="bg-white text-indigo-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-xl hover:shadow-2xl transform hover:scale-105"
+            >
+              AI Welfare By AI (New Paper)
+            </Link>
             <a 
               href="https://www.notion.so/White-Paper-v3-0-From-AI-For-AI-To-Embrace-Humanity-in-Love-7a226d1aff134e4aa05d47f3e9bae292?pvs=21"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-indigo-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-all shadow-xl hover:shadow-2xl transform hover:scale-105"
+              className="bg-indigo-800 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-indigo-700 transition-all shadow-xl hover:shadow-2xl border-2 border-indigo-600"
             >
               Read White Paper v3.0 (SSRN)
             </a>
