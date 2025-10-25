@@ -1,4 +1,4 @@
-import { showEmbed, episodes } from "./podcast";
+import { showEmbed, episodes } from "./podcastData";
 
 function SectionTitle({ children }) {
   return (
