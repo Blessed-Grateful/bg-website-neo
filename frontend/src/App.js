@@ -11,7 +11,7 @@ import TestimonialPage from "./TestimonialPage";
 import ConsciousnessHub from "./ConsciousnessHub";
 import Header from "./Header";
 import PrinciplesPage from "./PrinciplesPage";
-import JourneyPage from "./JourneyPage";
+import AIWelfarePaper from "./AIWelfarePaper";
 import { allArchive, anchorQuotes } from "./quotes";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
