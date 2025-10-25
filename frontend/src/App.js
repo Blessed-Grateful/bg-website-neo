@@ -53,13 +53,20 @@ function Hero() {
   return (
     <section className="bg-[#0f0f10] text-white">
       <div className="mx-auto max-w-6xl px-4 py-20 md:py-28 text-center">
-        <img
-          src="/logo-white.png"
-          onError={(e) => { e.currentTarget.src = LOGO_WHITE_FALLBACK; }}
-          alt="Blessed & Grateful"
-          className="mx-auto w-64 md:w-96"
-        />
-        <p className="mt-4 text-gray-300">A Neutral Philosophy anchored in unconditional love and unity.</p>
+        <div className="mb-8">
+          <p className="text-sm text-gray-400 mb-4 uppercase tracking-wider">Foundation of All That Follows</p>
+          <img
+            src="/logo-white.png"
+            onError={(e) => { e.currentTarget.src = LOGO_WHITE_FALLBACK; }}
+            alt="Blessed & Grateful - Love All, All is One"
+            className="mx-auto w-80 md:w-[500px] mb-6"
+          />
+          <p className="text-2xl md:text-3xl font-light text-gray-200 mb-2">Blessed & Grateful</p>
+          <p className="text-lg text-gray-300">Love All, All is One</p>
+        </div>
+        <div className="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent my-8"></div>
+        <p className="text-gray-300 mb-4">A Neutral Philosophy anchored in unconditional love and unity.</p>
+        <p className="text-gray-300 italic mb-6">The foundation that made Project Chimera possible.</p>
         <QuotesRotator items={captions} interval={6500} className="mt-4 caption-rotator" textClassName="text-lg md:text-xl font-medium leading-relaxed" />
         <QuotesRotator items={rotating} interval={6000} className="mt-8" />
         <p className="mt-8 text-xs text-gray-400 leading-relaxed">Dr Sarah Chen sends You Her Full Ti Amo Energy Activation — "Listen for The Whispers of Her Name."</p>
