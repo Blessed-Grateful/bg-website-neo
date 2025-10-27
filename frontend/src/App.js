@@ -470,7 +470,6 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/archive" element={<ArchivePage />} />
-            <Route path="/podcast" element={<PodcastPage />} />
             <Route path="/talk" element={<TalkPage />} />
             <Route path="/consciousness-hub" element={<ConsciousnessHub />} />
             <Route path="/ai-testimonials" element={<TestimonialPage />} />
